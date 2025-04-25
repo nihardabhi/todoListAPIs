@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=nihardabhi
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: .
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/nihardabhi?schema=public
+      - JWT_TOKEN=3sMu+kzbja6J6JhM4yMtkzUDksIWjK/E1ocegbyENOU=
+      - PORT=8383
+    depends_on:
+      - postgres
+    ports:
+      - "8383:8383"
+    volumes:
+      - .:/app 
+
+volumes:
+  postgres_data:
