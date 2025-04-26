@@ -4,7 +4,7 @@ create a simple to-do list APIs
 
 in this project we make users to register themself
 
-once user get register it will add there to do list
+once user get register it will add their to do list
 
 we use node.js to create backend server.
 
