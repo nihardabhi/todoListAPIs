@@ -1,15 +1,27 @@
 # todoListAPIs
 
-create a simple to-do list APIs
+## 📋 To-Do List APIs
+A lightweight and RESTful To-Do List backend API built using Node.js and Express, enabling users to manage tasks efficiently. This project demonstrates CRUD operations and follows modular design practices, ideal for learning REST API principles.
 
-in this project we make users to register themself
+## 🚀 Features
+Add new to-do tasks
 
-once user get register it will add their to do list
+Retrieve all to-dos or specific ones
 
-we use node.js to create backend server.
+Update task details (e.g., mark as complete)
 
-also we used JWT to authorized users.
+Delete tasks
 
-using prisma to ORM between API and database and docker to create separate environment for database and APIs
+Basic error handling and response management
+
+## 🛠️ Tech Stack
+
+Node.js
+
+Express.js
+
+Postman (for testing)
+
+
 
 
